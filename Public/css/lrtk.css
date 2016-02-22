@@ -1,0 +1,187 @@
+
+.picshow {
+	BORDER-BOTTOM: #d9e0ea 1px solid; BORDER-LEFT: #d9e0ea 1px solid; MARGIN: 0px auto; WIDTH: 958px; HEIGHT: 620px; BORDER-TOP: #d9e0ea 1px solid; BORDER-RIGHT: #d9e0ea 1px solid
+}
+
+#picarea {
+	MARGIN: 0px auto; WIDTH: 958px; BACKGROUND: #fff; HEIGHT: 620px
+}
+#bigpicarea {
+	POSITION: relative; MARGIN: 0px auto; WIDTH: 774px; HEIGHT: 482px; OVERFLOW: hidden
+}
+.image {
+	TEXT-ALIGN: center
+}
+.image IMG {
+	BORDER-BOTTOM: #ececec 1px solid; BORDER-LEFT: #ececec 1px solid; MARGIN: 0px auto; BORDER-TOP: #ececec 1px solid; BORDER-RIGHT: #ececec 1px solid
+}
+#bigpicarea .word {
+	TEXT-ALIGN: center; HEIGHT: 50px; COLOR: #333
+}
+#bigpicarea .word H3 {
+	TEXT-ALIGN: center; LINE-HEIGHT: 48px; HEIGHT: 48px; COLOR: #333; FONT-SIZE: 14px
+}
+#bigpicarea .ui-els-hide {
+	DISPLAY: none
+}
+#thumbs {
+	LIST-STYLE-TYPE: none; MARGIN: 0px auto; WIDTH: 830px; HEIGHT: 110px
+}
+* HTML #thumbs {
+	HEIGHT: 100%
+}
+#thumbs LI {
+	MARGIN: 0px 7px; WIDTH: 90px; DISPLAY: inline; FLOAT: left; HEIGHT: 60px
+}
+#thumbs UL {
+	MARGIN-TOP: 3px
+}
+#thumbs LI.last_img {
+	MARGIN-RIGHT: 4px
+}
+#thumbs LI.first {
+	MARGIN: 25px 10px 0px 15px; WIDTH: 9px; HEIGHT: 16px; CURSOR: pointer
+}
+#thumbs LI.last {
+	MARGIN: 25px 10px 0px 15px; WIDTH: 9px; HEIGHT: 16px; CURSOR: pointer
+}
+#thumbs LI A {
+	BORDER-BOTTOM: #fff 2px solid; BORDER-LEFT: #fff 2px solid; WIDTH: 90px; DISPLAY: block; FONT-SIZE: 0px; BORDER-TOP: #fff 2px solid; BORDER-RIGHT: #fff 2px solid
+}
+#thumbs LI A:hover {
+	BORDER-BOTTOM: #000 2px solid; BORDER-LEFT: #000 2px solid; BORDER-TOP: #000 2px solid; BORDER-RIGHT: #000 2px solid
+}
+#thumbs LI A.current {
+	BORDER-BOTTOM: #f8ae0f 2px solid; BORDER-LEFT: #f8ae0f 2px solid; BORDER-TOP: #f8ae0f 2px solid; BORDER-RIGHT: #f8ae0f 2px solid
+}
+#thumbs LI.first IMG {
+	
+}
+#thumbs LI.last IMG {
+	
+}
+.bigbtnPrev {
+	Z-INDEX: 100; POSITION: absolute; WIDTH: 35px; HEIGHT: 51px; TOP: 186px; CURSOR: pointer; LEFT: 30px
+}
+.bigbtnNext {
+	Z-INDEX: 100; POSITION: absolute; WIDTH: 35px; HEIGHT: 51px; TOP: 186px; CURSOR: pointer; RIGHT: 30px
+}
+#big_play_prev {
+	BACKGROUND-IMAGE: url(images/words/leftbig.png); WIDTH: 35px; DISPLAY: block; HEIGHT: 51px; _background: none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop,src='../images/leftbig.png')
+}
+#big_play_next {
+	BACKGROUND-IMAGE: url(images/words/rightbig.png); WIDTH: 35px; DISPLAY: block; HEIGHT: 51px; _background: none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop,src='../images/rightbig.png')
+}
+#smallpicarea {
+	MARGIN: 0px auto; WIDTH: 958px; BORDER-TOP: #ececec 1px solid; PADDING-TOP: 20px
+}
+.wz_words
+{
+
+}
+
+/*main*/
+.imgContainer {
+	width: 745px;
+	margin: 20px auto;
+	padding: 10px;
+	box-shadow: 1px 0 6px 0 rgba(180, 180, 180, 0.4);
+}
+.imgUl {
+	position: relative;
+	width:2500px;
+}
+.box {
+	width: 684px;
+	margin-left: 30px;
+	overflow: hidden;
+}
+.detailImg,
+.smallImg {
+	position: relative;
+}
+/*detailImg*/
+#detailImg-box {
+	min-height: 200px;
+}
+.detailImg {
+	text-align: center;
+}
+.detailImg img {
+	max-width: 684px;
+}
+.detailImg p {
+	text-align: left;
+	color: #999;
+}
+#detailImg-pre,
+#detailImg-next {
+	position: absolute;
+	width: 30px;
+	height: 46px;
+	top: 50%;
+	background: url(images/worddq/page_button.gif) 0 0 no-repeat;
+	cursor: pointer;
+	text-indent:-9999px;
+}
+#detailImg-pre {
+	left: 0;
+	background-position: -35px 0;
+}
+#detailImg-next {
+	right: 0;
+	background-position: -99px 0;
+}
+#detailImg-pre:hover {
+	background-position: -35px -47px;
+}
+#detailImg-next:hover {
+	background-position: -99px -47px;
+}
+/*smallImg*/
+#smallImg-box {
+	height: 92px;
+}
+.smallImg li {
+	float: left;
+	width: 76px;
+}
+.smallImg li a {
+	display: block;
+	width: 70px;
+	height: 70px;
+	border: 3px solid #fff;
+	overflow: hidden;
+	vertical-align: middle;
+	margin: 5px auto;
+}
+.smallImg img {
+	width: 70px;
+}
+.smallImg li a:hover,
+.smallImg .cur a {
+	border-color: #F45E5E;
+}
+#smallImg-pre,
+#smallImg-next {
+	position: absolute;
+	top: 0;
+	height: 92px;
+	width: 28px;
+	margin: 0;
+	background: url(images/worddq/album-arrow.png) 0 0 no-repeat;
+	cursor: pointer;
+}
+#smallImg-pre {
+	left: 0;
+}
+#smallImg-next {
+	right: 0;
+	background-position: 0 -94px;
+}
+#smallImg-pre:hover {
+	background-position: -28px 0;
+}
+#smallImg-next:hover {
+	background-position: -28px -94px;
+}

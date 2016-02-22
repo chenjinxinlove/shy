@@ -1,0 +1,23 @@
+/*院长介绍界面*/
+#content_YZ
+{
+	/*height: 600px;*/
+	width:696px;
+	margin:auto;	
+}
+#content_YZ img
+{
+	width: 696px;
+	height: 400px;	
+	margin-top: 10px;
+}
+.wz
+{
+	line-height: 100px;
+}
+/*尾巴的css*/
+#footer_YZ
+{	
+	height: 201px;
+	background: url(images/foot.png) no-repeat bottom;
+}

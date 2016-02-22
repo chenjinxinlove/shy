@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>宏昌印象-作品赏析</title>
+	<script type="text/javascript" src="__PUBLIC__/js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/jquery.nivo.slider.pack.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/index.js"></script>
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/index.css">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/nivo-slider.css">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/default.css"> 
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/HcImpressionYZ.css">
+</head>
+<body >
+<div id="main">               
+	<div id="head">
+	<img src="__PUBLIC__/css/images/xyh.gif" alt="">
+		<div class="word">
+			
+		</div>
+		<include file='Common:nav'/>
+	</div>
+	<div id="content_YZ_words">
+		<div class="wz">
+			<span style="padding-left: 100px ;font-size:15px"><b>您的位置：作品赏析</b></span>
+			
+		</div>
+		<!-- Banner -->
+			<div class="theme-default" style="width:860px ; margin-left: 65px">
+				<div id="slider" class="nivoSlider" >
+					<foreach name="list1" item="vo">
+							<img  src="__ROOT__/Uploads/{$vo.address}"  data-thumd="__PUBLIC__/images/nivoSlider/nemo.jpg">
+					</foreach>
+				</div>
+			</div>
+			
+		<!-- @end Banner -->
+	</div>
+	<div id="footer_YZ"></div>
+</div>
+	
+</body>
+</html>

@@ -1,0 +1,131 @@
+<include file='common:header'/>
+		
+				<div class="main-content">
+					<div class="breadcrumbs" id="breadcrumbs">
+						<script type="text/javascript">
+							try{ace.settings.check('breadcrumbs' , 'fixed')}catch(e){}
+						</script>
+
+						<ul class="breadcrumb">
+							<li>
+								<i class="icon-home home-icon"></i>
+								<a href="#">作品管理</a>
+							</li>
+							<li class="active">管理作品</li>
+						</ul><!-- .breadcrumb -->
+
+						<div class="nav-search" id="nav-search">
+							<form class="form-search">
+								<span class="input-icon">
+									<input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="off" />
+									<i class="icon-search nav-search-icon"></i>
+								</span>
+							</form>
+						</div><!-- #nav-search -->
+					</div>
+
+					<div class="page-content">
+						<div class="page-header">
+							<h1>
+								管理作品
+								<small>
+									<i class="icon-double-angle-right"></i>
+									选择需要更新替换的图片
+									1.首页作品的尺寸是618*246
+									2.最新作品的尺寸是774*436
+									3.作品赏析的尺寸是860*483
+									4.缩略图的尺寸是90*60
+									
+								</small>
+							</h1>
+						</div><!-- /.page-header -->
+						
+						<div class="row">
+							<div class="col-lg-3">
+								<div class="alert ">
+									<div class="demo ">
+									<div id="word_id">
+										<select class="prov"></select>
+										<select class="city" disabled="disabled"></select>
+										<select class="dist" disabled="disabled"></select>
+									</div>	
+								</div>
+								</div>
+							</div><!-- /.col -->
+							<div class="col-lg-3">
+								<div class="alert ">
+									<input type="file" id="upload" class="uoload" >
+								</div>
+								<div style="margin-left: 17px;">
+									<a class="btn btn-success" href="javascript:$('#upload').uploadify('settings', 'formData', {'type': $('.prov').val() , 'city': $('.city').val() });$('#upload').uploadify('upload')">开始上传
+									</a>
+								</div>
+								 
+							</div><!-- /.col -->
+							
+									
+							
+						</div><!-- /.row -->
+
+
+					</div><!-- /.page-content -->
+				</div><!-- /.main-content -->
+			</div><!-- /.main-container-inner -->
+
+			<a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
+				<i class="icon-double-angle-up icon-only bigger-110"></i>
+			</a>
+		</div><!-- /.main-container -->
+
+		<!-- basic scripts -->
+
+		
+		<include file='common:foot'/>
+		<script type="text/javascript" src="__PUBLIC__/uploadify/jquery.uploadify.min.js"></script>
+		<script type="text/javascript">
+			
+		$(function () {
+			// var swf = '__PUBLIC__/uploadify/uploadify.swf';
+			// var upload = '__APP__/Home/Word/upload';
+			 var sid = '{:session_id()}';
+		  	 var id = '8';
+			// type = '8';
+			// sid = '1';
+			//联动选择
+			$("#word_id").citySelect({
+				url:{"citylist":[
+						
+					{"p":"首页作品","c":[{"n":"1"},{"n":"2"},{"n":"3"},{"n":"4"},{"n":"5"}]},
+					{"p":"最新作品","c":[{"n":"1"},{"n":"2"},{"n":"3"},{"n":"4"},{"n":"5"},{"n":"6"},{"n":"7"}]},
+					{"p":"作品赏析","c":[{"n":"新增作品"}]},
+					{"p":"缩略图上传","c":[{"n":"1"},{"n":"2"},{"n":"3"},{"n":"4"},{"n":"5"},{"n":"6"},{"n":"7"}]},
+					
+					]},
+				prov:"作品赏析",
+				city:"新增作品",
+				dist:"",
+				nodata:"none"
+			});
+
+			var prov = $('.prov').val();
+
+
+			$('#upload').uploadify({
+				swf : '__PUBLIC__/uploadify/uploadify.swf',
+				uploader : '__APP__/Home/Word/upload',
+				width : 120,
+				height : 30,
+				auto: false,
+				fileTypeDesc : 'Image File',
+				fileTypeExts : '*.jpeg; *.jpg; *.png; *.gif',
+				formData : {'session_id' : sid },
+				onUploadSuccess : function (file, data, response)
+				{
+					alert(data);
+				}
+
+			});
+		
+		});
+		</script>
+	

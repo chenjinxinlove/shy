@@ -1,0 +1,30 @@
+[ 2016-02-15T14:38:29+08:00 ] ::1 /shy/admin.php/Uploads/2016-02-15/56c16951da43a.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Uploads
+
+[ 2016-02-15T14:38:29+08:00 ] ::1 /shy/admin.php/Uploads/2016-02-15/56c16ac925399.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Uploads
+
+[ 2016-02-15T14:38:29+08:00 ] ::1 /shy/admin.php/Uploads/2016-02-15/56c168fd396a0.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Uploads
+
+[ 2016-02-15T14:38:29+08:00 ] ::1 /shy/admin.php/Uploads/2016-02-15/56c16788d364d.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Uploads
+
+[ 2016-02-15T14:38:30+08:00 ] ::1 /shy/admin.php/Uploads/2016-02-15/56c16951da43a.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Uploads
+
